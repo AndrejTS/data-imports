@@ -1,0 +1,64 @@
+version: '3.8'
+
+services:
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongodb
+      - redis
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - REDIS_URL=redis://redis:6379
+    networks:
+      - app-network
+
+  imports_worker:
+    build:
+      context: ./imports
+      dockerfile: Dockerfile
+    depends_on:
+      - redis
+      - mongodb
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - REDIS_URL=redis://redis:6379
+    networks:
+      - app-network
+
+  imports_beat:
+    build:
+      context: ./imports
+      dockerfile: Dockerfile
+    command: celery -A tasks beat --loglevel=info
+    depends_on:
+      - redis
+      - mongodb
+    environment:
+      - MONGODB_URL=mongodb://mongodb:27017
+      - REDIS_URL=redis://redis:6379
+    networks:
+      - app-network
+
+  mongodb:
+    build: 
+      context: ./mongodb
+      dockerfile: Dockerfile
+    ports:
+      - "27017:27017"
+    networks:
+      - app-network
+
+  redis:
+    image: redis:latest
+    ports:
+      - "6379:6379"
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

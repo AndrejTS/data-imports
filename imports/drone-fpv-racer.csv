@@ -1,0 +1,4 @@
+ProductCode;ProductURL;ProductName;Price;Currency;Description;ImageURL;Brand;InternalNotes;StockStatus
+DRONE-123;https://www.drone-fpv-racer.com/pavo-pico-brushless-whoop-bnf-elrs-24g-no-vtx-betafpv-114;Pavo Pico Brushless Whoop;1279.99;CZK;"Le Pavo Pico de BetaFPV est un cinewhoop ultra-léger";https://www.drone-fpv-racer.com/58758.jpg;BetaFPV;"Top produkt Q3 2024";InStock
+DJI-98765;https://www.drone-fpv-racer.com/dji-avata;DJI Avata Pro;35900.00;CZK;"DJI Avata s 4K kamerou a gyro stabilizací";https://www.drone-fpv-racer.com/59123.jpg;DJI;"Skladem od 15.8.";PreOrder
+FPV-456;https://www.drone-fpv-racer.com/freestyle-kit;Freestyle FPV Kit;8999.00;CZK;"Kompletní sada pro freestyle létání";https://www.drone-fpv-racer.com/59234.jpg;Eachine;"Akční cena do 31.12.";InStock

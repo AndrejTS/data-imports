@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Products xmlns:supplier="http://example.com/supplier-data">
+    <Product supplier:code="SUP-APPLE-001" status="bestseller">
+        <Identifiers>
+            <SKU>NBK-M1-2024</SKU>
+            <EAN>1942523546854</EAN>
+        </Identifiers>
+
+        <BasicInfo>
+            <Name>Apple MacBook Pro 16" M3 Max</Name>
+            <URL>https://www.electro.com/macbook-pro-16-m3</URL>
+        </BasicInfo>
+
+        <Pricing>
+            <Price currency="CZK">79990.00</Price>
+            <OldPrice>95990.00</OldPrice>
+            <VAT>21%</VAT>
+        </Pricing>
+
+        <Specifications>
+            <Processor>Chip M3 Max 16-core</Processor>
+            <RAM>64GB</RAM>
+            <Storage>1TB SSD</Storage>
+            <Display>16.2" Liquid Retina XDR</Display>
+        </Specifications>
+
+        <Media>
+            <MainImage>https://www.electro.com/images/macbook-pro-main.jpg</MainImage>
+            <Gallery>
+                <Image>https://www.electro.com/images/macbook-angle1.jpg</Image>
+                <Image>https://www.electro.com/images/macbook-angle2.jpg</Image>
+            </Gallery>
+        </Media>
+
+        <Stock>
+            <Available>15</Available>
+            <DeliveryTime>1-2 dny</DeliveryTime>
+        </Stock>
+
+        <Categories>
+            <Primary>Notebooky</Primary>
+            <Secondary>Apple</Secondary>
+            <Tags>Novinka, Profesionální</Tags>
+        </Categories>
+
+        <ExtendedData>
+            <Warranty>24 měsíců</Warranty>
+            <SupplierNote>Dodání s CZ klávesnicí</SupplierNote>
+        </ExtendedData>
+    </Product>
+
+    <Product supplier:code="SUP-SAMSUNG-042">
+        <Identifiers>
+            <SKU>SM-US24</SKU>
+            <EAN>8854236954712</EAN>
+        </Identifiers>
+
+        <BasicInfo>
+            <Name>Samsung Galaxy S24 Ultra 5G</Name>
+            <URL>https://www.electro.com/galaxy-s24-ultra</URL>
+        </BasicInfo>
+
+        <Pricing>
+            <Price currency="CZK">34990.00</Price>
+            <VAT>21%</VAT>
+        </Pricing>
+
+        <Specifications>
+            <Display>6.8" Dynamic AMOLED 2X</Display>
+            <Storage>512GB</Storage>
+            <Battery>5000mAh</Battery>
+            <Camera>200MP + 12MP + 10MP</Camera>
+        </Specifications>
+
+        <Media>
+            <MainImage>https://www.electro.com/images/s24-ultra-main.jpg</MainImage>
+        </Media>
+
+        <Stock>
+            <Available>0</Available>
+            <DeliveryTime>14 dní</DeliveryTime>
+        </Stock>
+
+        <Categories>
+            <Primary>Mobilní telefony</Primary>
+            <Secondary>Android</Secondary>
+        </Categories>
+    </Product>
+</Products>
