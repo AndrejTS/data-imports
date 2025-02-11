@@ -1,7 +1,5 @@
 # Data Imports
 
-Tento projekt demonstruje proces importu dat s využitím API a Dockeru.
-
 ## Obsah
 
 - [Diagramy](#diagramy)
@@ -59,5 +57,3 @@ Import můžete spustit manuálně pomocí API volání. Příklad použití s *
       -d '{
       "website_id": "electronics-shop.com"
     }'
-
-Tato dokumentace poskytuje základní informace potřebné k nasazení a vyzkoušení API. Pro další detaily a možnosti rozšíření doporučujeme prozkoumat Swagger rozhraní.
